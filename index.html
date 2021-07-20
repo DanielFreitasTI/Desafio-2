@@ -5,24 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Link para o arquivo Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-default"><!-- Código do NavBar -->
+            <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html"><!-- Logo -->
+                        <a class="navbar-brand" href="index.html">
                           Cadastros
                         </a>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" data-toggle="modal" data-target="#myModal"><!-- Link que abre a janela modal -->
-                                Entrar 
-                                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                        <li><a href="#" data-toggle="modal" data-target="#">
+                                Desafio 2 
+                                
                             </a>
                         </li>
                     </ul>
@@ -38,14 +37,14 @@
         </div>
 
 
-        <div id="modalCliente" class="modal fade" tabindex="-1" role="dialog"><!-- Início do código da janela modal -->
+        <div id="modalCliente" class="modal fade" tabindex="-1" role="dialog"><!-- Início do código da janela modal cliente -->
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"><!-- Header do modal -->
-                        <h4 class="modal-title">Cadastro de Clientes</h4><!-- Título -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Cadastro de Clientes</h4>
                     </div>
-                    <div class="modal-body"><!-- Corpo do modal -->
-                        <form id="formClientes"><!-- Início do Formulário -->
+                    <div class="modal-body">
+                        <form id="formClientes">
                             <div class="form-group col-md-6">
                                 <input type="text" class="form-control" id="nome" placeholder="Nome">
                             </div>
@@ -85,14 +84,14 @@
                             <button class="btn btn-block btn-info" type="button" onclick="cadastrar()">Cadastrar</button>
                         </form>
                     </div>
-                    <div class="modal-footer"><!-- Footer do Modal -->
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">
                             Fechar <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                         </button>                
                     </div>
                 </div>
             </div>
-        </div><!-- ##Fim do Modal -->
+        </div><!-- ##Fim do Modal cliente-->
 
 
 
