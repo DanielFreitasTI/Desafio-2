@@ -30,8 +30,27 @@ let data = {
 }
 
 let convertData = JSON.stringify(data);
+
+//localStorage.setItem("id", convertData);
+
+    if (localStorage.idAtual) {
+        localStorage.idAtual = Number(localStorage.idAtual) + 1;
+        localStorage.setItem(localStorage.idAtual, convertData);
+    } else {
+        localStorage.idAtual = 1;
+        localStorage.setItem(localStorage.idAtual, convertData);
+      }
+
+      document.getElementById("formClientes").reset();
+
+// if (localStorage.clienteId) {
+//     localStorage.clienteId = Number(localStorage.clienteId) + 1;
+   
+//   } else {
+//     localStorage.clienteId = 1;
+//   }
     
-    console.log(convertData);
+    //console.log(convertData);
 
 }
 
