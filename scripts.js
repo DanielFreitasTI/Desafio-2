@@ -40,7 +40,7 @@ let convertData = JSON.stringify(data);
         localStorage.setItem(`cliente_id: ${localStorage.idAtual}`, convertData);
       }
       alert('Cliente cadastrado!');
-      document.getElementById("formClientes").reset();
+      document.getElementById("formCliente").reset();
 
 }
 
