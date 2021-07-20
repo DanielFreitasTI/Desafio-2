@@ -35,12 +35,12 @@ let convertData = JSON.stringify(data);
 
     if (localStorage.idAtual) {
         localStorage.idAtual = Number(localStorage.idAtual) + 1;
-        localStorage.setItem(localStorage.idAtual, convertData);
+        localStorage.setItem(`cliente_id: ${localStorage.idAtual}`, convertData);
     } else {
         localStorage.idAtual = 1;
-        localStorage.setItem(localStorage.idAtual, convertData);
+        localStorage.setItem(`cliente_id: ${localStorage.idAtual}`, convertData);
       }
-
+      alert('Cliente cadastrado!');
       document.getElementById("formClientes").reset();
 
 // if (localStorage.clienteId) {
